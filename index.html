@@ -42,13 +42,8 @@
 <p>By default, Mr. Doc uses <a href="https://www.github.com/mr-doc/mr-doc-theme-default">mr-doc-theme-default</a> which uses
 <a href="https://twitter.github.com/bootstrap/">Twitter Bootstrap</a> for the frontend framework and <a href="http://prismjs.com/">Prism.js</a>
 for syntax highlighting.</p>
-<h2>Docs</h2>
-<p>The beautifully documentation can be found at <a href="http://fgribreau.github.io/doxx/docs/">GitHub</a>.</p>
-<h2>Installation</h2>
-<pre><code class="language-bash"># Install the module globally
-$ npm install -g mr-doc
-</code></pre>
-<h2>Usage</h2>
+<p>Visit the <a href="https://mr-doc.github.io/">official site</a> for instructions to install Mr. Doc and other themes.</p>
+<h2>Documentation Style</h2>
 <p>JavaScript JavaDoc style</p>
 <pre><code class="language-javascript">/**
  * Create an array of all the right files in the source dir
@@ -104,34 +99,6 @@ collectFiles = (source, options, callback) -&gt;
     -s, --source &lt;source&gt;        The directory to your source.
     -t, --theme &lt;theme&gt;          The name of the theme to select. e.g. mr-doc-theme-cayman or cayman.
 </code></pre>
-<h2>Themes</h2>
-<h3>Usage</h3>
-<p>With the release of <strong>2.1.0</strong>, you are able to use different themes to <strong><em>spice</em></strong> up your documentations. To use a specific theme, simply use the <code>--theme</code> option followed by the name of the theme:</p>
-<pre><code class="language-bash"># Generate the docs
-$ mr-doc --source lib --target docs --theme cayman
-# or
-$ mr-doc --source lib --target docs --theme mr-doc-theme-cayman
-</code></pre>
-<h3>Installing Themes</h3>
-<p>Themes are just npm modules that can be installed in your application, there is a default theme included with mr-doc.</p>
-<p>Current available themes:</p>
-<ul>
-<li><a href="mr-doc-theme-default">https://github.com/mr-doc/mr-doc-theme-default</a></li>
-<li><a href="mr-doc-theme-cayman">https://github.com/mr-doc/mr-doc-theme-cayman</a></li>
-</ul>
-<p>To install into your project to use as part of the build step, simply:</p>
-<pre><code>npm install mr-doc-theme-cayman --save-dev
-</code></pre>
-<p><strong><em>Notes</em></strong></p>
-<ul>
-<li>The prefix <code>mr-doc-theme-</code> is not necessary except when
-publishing your own themes.</li>
-<li>While it is still possible to use templates, I would advise you
-to use themes instead.</li>
-</ul>
-<h3>Creating Themes</h3>
-<p>If you would like to create your own themes, see
-<a href="https://github.com/mr-doc/mr-doc-theme-starter-kit">mr-doc-theme-starter-kit</a>.</p>
 <h2>Related</h2>
 <ul>
 <li><a href="https://github.com/evertton/grunt-doxx">grunt-doxx</a> - mr-doc grunt plugin automatically generates the documentation for your project.</li>
@@ -147,9 +114,7 @@ to use themes instead.</li>
 <p>In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using <a href="https://github.com/gulpjs/gulp">gulp</a> and <a href="https://github.com/mochajs/mocha">mocha</a>.</p>
 <h2>Updating Docs</h2>
 <p>To update the docs on the gh-pages branch:</p>
-<pre><code>gulp docs
-git checkout gh-pages
-git push origin gh-pages
+<pre><code class="language-bash">gulp docs
 </code></pre>
 <h2>Changelog</h2>
 <p>The changes can be viewed <a href="/CHANGELOG.md">here</a>.</p>
